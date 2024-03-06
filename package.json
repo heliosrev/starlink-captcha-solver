@@ -1,0 +1,15 @@
+{
+  "name": "starlinkcaptchasolver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "solver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "machiyouness",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "qs": "^6.11.2"
+  }
+}
