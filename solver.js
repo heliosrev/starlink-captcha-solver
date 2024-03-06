@@ -39,6 +39,7 @@ axios.request({
   hsw(checksiteconfig.req, {
     "assethost": null,
     "href": "https://www.starlink.com/",
+    // no time to reverse this one but it always works lmao
     "ardata": "nwkFPM5f6STXCpKWdEJprog+xdFpcIqeTwQ+7hk3ByqpPS7u6GWnEA+Xjbq2T7m6YF6T09IdFjOCDnG8ZyoKCpyqnolynx72Qy8HfLaMe0Scg0BkAQ==a+7zjp0Hw8tT38QR"
   }).then((n) => {
     let data = qs.stringify({
@@ -46,7 +47,9 @@ axios.request({
       'sitekey': 'f21f5897-3544-42b2-9749-62443db53797',
       'host': 'www.starlink.com',
       'hl': 'en',
+      // they don't check this soup yet hh
       'motionData': '{"st":1709668032010,"v":1,"topLevel":{"st":1709668007059,"sc":{"availWidth":1920,"availHeight":1030,"width":1920,"height":1080,"colorDepth":24,"pixelDepth":24,"top":0,"left":0,"availTop":26,"availLeft":0,"mozOrientation":"landscape-primary","onmozorientationchange":null},"nv":{"permissions":{},"pdfViewerEnabled":true,"doNotTrack":"unspecified","maxTouchPoints":0,"mediaCapabilities":{},"oscpu":"Linux x86_64","vendor":"","vendorSub":"","productSub":"20100101","cookieEnabled":true,"buildID":"20181001000000","mediaDevices":{},"serviceWorker":{},"credentials":{},"clipboard":{},"mediaSession":{},"webdriver":false,"hardwareConcurrency":4,"geolocation":{},"appCodeName":"Mozilla","appName":"Netscape","appVersion":"5.0 (X11)","platform":"Linux x86_64","userAgent":"Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0","product":"Gecko","language":"en-US","languages":["en-US","en"],"locks":{},"onLine":true,"storage":{},"plugins":["internal-pdf-viewer","internal-pdf-viewer","internal-pdf-viewer","internal-pdf-viewer","internal-pdf-viewer"]},"dr":"","inv":true,"exec":true,"wn":[],"wn-mp":0,"xy":[],"xy-mp":0,"mm":[],"mm-mp":59.59000000000001,"md":[],"md-mp":2014.5,"mu":[],"mu-mp":2011},"session":[],"widgetList":["0zxjr3wd5qbe"],"widgetId":"0zxjr3wd5qbe","href":"https://www.starlink.com/","prev":{"escaped":false,"passed":false,"expiredChallenge":false,"expiredResponse":false}}',
+      // same shit here ^^!
       'pdc': '{"s":1709668032104,"n":0,"p":299379,"gcs":300515}',
       'n': n,
       'c': JSON.stringify(checksiteconfig)
